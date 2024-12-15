@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .calculator{
+            max-width:400px;
+            margin:50px auto;  /* Top and Bottom Margins: 50px. Left and Right Margins: Automatically centered.*/
+        }
+
+        .calculator-screen{
+            height: 88px;
+            width:100%;
+            font-size:2rem; /* 1rem = 16px (root font size) So, 2rem = 16px × 2 = 32px.*/
+            text-align:right;
+            padding: 10px;
+            border: none;
+            background:#f3f4f6;
+        }
+        .calculator-keys button{
+            height:80px;
+            font-size:1.5rem; 
+        }
+    </style>
+</head>
+<body class="bg-gray-100">  <!--a light gray background color 100 means color shade-->
+
+    <div class="calculator bg-white rounded-lg shadow-lg p-4 "> <!-- Adds large rounded corners, Applies a large box shadow, Adds padding of 1 rem(16px) -->
+        <input type="text" class="calculator-screen bg-gray-200 rounded mb-4 " disabled> <!--margin bottom 1 rem-->
+        <div class="calculator-keys  grid grid-cols-4 gap-2"> <!-- Enables grid layout for the container, Divides the grid into 4 equal columns, Adds a spacing between rows and columns-->
+            <button class="bg-gray-300 rounded button all-clear" value="C">AC</button>
+            <button class="bg-gray-300 rounded button operator" value="%">%</button>
+            <button class="bg-gray-300 rounded button backspace" value="Backspace">⌫</button>
+            <button class="bg-yellow-500 rounded button operator" value="/">/</button>
+            <button class="bg-gray-300 rounded button"  value="7">7</button>
+            <button class="bg-gray-300 rounded button" value="8">8</button>
+            <button class="bg-gray-300 rounded button" value="9">9</button>
+            <button class="bg-yellow-500 rounded button operator" value="*">*</button>
+            <button class="bg-gray-300 rounded button" value="4">4</button>
+            <button class="bg-gray-300 rounded button" value="5">5</button>
+            <button class="bg-gray-300 rounded button" value="6">6</button>
+            <button class="bg-yellow-500 rounded button operator" value="-">-</button>
+            <button class="bg-gray-300 rounded button" value="1">1</button>
+            <button class="bg-gray-300 rounded button" value="2">2</button>
+            <button class="bg-gray-300 rounded button" value="3" >3</button>
+            <button class="bg-yellow-500 rounded button operator" value="+">+</button>
+            <button class="bg-gray-300 rounded button" value="00">00</button>
+            <button class="bg-gray-300 rounded button" value="0">0</button>
+            <button class="bg-yellow-500 rounded button decimal" value=".">.</button>
+            <button class="bg-yellow-500 rounded button operator" value="=">=</button>
+
+        </div>
+    </div>
+<script src="script.js"></script>
+    
+</body>
+</html>
