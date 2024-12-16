@@ -9,9 +9,11 @@
 // 300 Range - codes for redirects 
 // 400 Range - used or client error codes
 // 500 Range - server error codes
+// to install 3rd party packages run 'npm install lodash' some like this
 
 const http = require('http')
 const fs =require('fs') 
+
 const _ = require('lodash')
 
 
