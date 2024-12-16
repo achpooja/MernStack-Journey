@@ -14,6 +14,7 @@ var http =require('http')
 //     res.writeHead(200,{'Content-Type':'text/html'})
 //     res.end('Hello Node js World!')
 // }).listen(8080)
+
 const server =http.createServer((req,res)=>{
     console.log('request made')
 })
