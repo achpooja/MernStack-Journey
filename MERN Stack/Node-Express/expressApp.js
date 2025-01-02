@@ -17,14 +17,14 @@ app.get('/about',(req,res)=>{
     // res.send('<p>Home Page</p>')
     })
 
+// redirects //
+
+app.get('/about-me',(req,res)=>{
+    res.redirect('/about')
+})
 
 // 404 Page //
 
 app.use((req, res)=>{
     res.sendFile('./requestResponse/views/404.html',{root: __dirname})
-})
-// redirects //
-
-app.get('/about-me',(req,res)=>{
-    res.redirect('/about')
 })
